@@ -1,0 +1,200 @@
+html,
+body {
+    color: #ff2a1b;
+    margin: 1rem;
+    padding: 0;
+}
+html {
+    font-family: Montserrat, "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    overflow-y: auto;
+}
+
+body {
+    /* Set the background image to your logo */ 
+    background-image: url('img/openarcadia_logo1.png');
+
+    /* Cover the entire page with the image without losing its aspect ratio */
+    background-size: cover; /* 'cover' ensures the background covers the area */
+    
+    /* Ensure the image stays centered */
+    background-position: center center;
+
+    /* The image won't repeat */
+    background-repeat: no-repeat;
+
+    /* Ensure the background image scales with the viewport */
+    background-attachment: fixed; /* This could also be 'scroll' depending on your preference */
+    
+    /* Optional: setting a background color that matches your logo’s primary color can provide a seamless look while the image loads */
+    background-color: #000; /* Example: black, adjust based on your logo's prevalent color */
+    
+    /* Ensure min-height is 100% so that body covers at least the viewport height */
+    min-height: 100vh; /* 100% of the viewport height */
+    
+    /* Other body styles for your content to ensure good readability and spacing */
+    margin: 0;
+    padding: 20px; /* Adjust as per your design preference */
+    color: #fff; /* Adjust text color for readability against the background */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrally locates the content */
+    align-items: center; /* Centers content horizontally */
+    text-align: center; /* Ensures text content in the body is centered */
+}
+a {
+    -webkit-transition: color 0.2s ease-out;
+    -moz-transition: color 0.2s ease-out;
+    transition: color 0.2s ease-out;
+    color: #ff2a1b;
+}
+a:hover {
+    color: #333;
+}
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 1.8rem;
+    font-weight: normal;
+}
+h3 {
+    font-size: 2rem;
+    font-weight: normal;
+}
+.title, .links, main, footer {
+    text-align: center;
+}
+
+.title {
+    color: #FFBF19;
+    /*color: #FFDD7B;*/
+    text-align: center;
+
+  }
+  
+main span {
+    padding:4px;
+    background-color: #FFBF19;
+    /*background-color: #FFDD7B;*/
+}
+
+@media screen and (max-width: 1200px) {
+    h1 {
+        font-size: 4rem;
+    }
+    h2 {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 992px) {
+    h1 {
+        font-size: 4rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 576px) {
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1rem;
+    }
+}
+img.portrait {
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 10px solid #ff2a1b;
+    margin: 2em 3em;
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    max-height: 300px;
+}
+.column {
+    flex: 1;
+}
+main .block {
+    display: flex;
+}
+main .block.introduction {
+    margin: 0 auto;
+    margin-top: 6vh;
+    min-height: calc(100vh - 20vh);
+    width: 600px;
+}
+main .column.left {
+    text-align: end;
+}
+main .column.right h1,
+main .column.center h1 {
+    margin-left: -15px;
+    margin-bottom: 0.4em;
+}
+main .column.right h2,
+main .column.center h2 {
+    margin-top: 0;
+}
+main .column.right .links,
+main .column.center .links {
+    margin-top: 2.5rem;
+    font-size: 1.5rem;
+}
+main .column.right .links a,
+main .column.center .links a {
+    margin-right: 0.5rem;
+    text-decoration: none;
+}
+@media screen and (max-width: 992px) {
+    main .block {
+        flex-direction: column;
+    }
+    main .block.introduction {
+        margin-top: 0;
+    }
+    main .column.left {
+        text-align: center;
+    }
+    main .column.right h1 {
+        margin-top: 0;
+    }
+    main img.portrait {
+        margin: 0;
+    }
+}
+@media screen and (max-width: 576px) {
+    main .column.right .links,
+    main .column.center .links {
+        margin-top: 1.6rem;
+        font-size: 1.5rem;
+    }
+    main .block.introduction {
+        margin-top: 0;
+        width: 96%;
+    }
+}
+footer {
+    display: flex;
+    margin-top: 3rem;
+    font-size: 0.75rem;
+}
+@media screen and (max-width: 992px) {
+    footer {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 576px) {
+    footer {
+        font-size: 0.45rem;
+    }
+}
