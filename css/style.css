@@ -185,7 +185,6 @@ main .column.center .links a {
 }
 footer {
     display: flex;
-    margin-top: 3rem;
     font-size: 0.75rem;
 }
 @media screen and (max-width: 992px) {
