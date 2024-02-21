@@ -11,26 +11,10 @@ html {
 }
 
 body {
-    /* Set the background image to your logo */ 
-    background-image: url('img/openarcadia_logo1.png');
-
-    /* Cover the entire page with the image without losing its aspect ratio */
-    background-size: cover; /* 'cover' ensures the background covers the area */
-    
-    /* Ensure the image stays centered */
-    background-position: center center;
-
-    /* The image won't repeat */
-    background-repeat: no-repeat;
-
-    /* Ensure the background image scales with the viewport */
-    background-attachment: fixed; /* This could also be 'scroll' depending on your preference */
-    
+  
     /* Optional: setting a background color that matches your logo’s primary color can provide a seamless look while the image loads */
     background-color: #000; /* Example: black, adjust based on your logo's prevalent color */
     
-    /* Ensure min-height is 100% so that body covers at least the viewport height */
-    min-height: 100vh; /* 100% of the viewport height */
     
     /* Other body styles for your content to ensure good readability and spacing */
     margin: 0;
@@ -138,7 +122,6 @@ main .column.left {
 }
 main .column.right h1,
 main .column.center h1 {
-    margin-left: -15px;
     margin-bottom: 0.4em;
 }
 main .column.right h2,
